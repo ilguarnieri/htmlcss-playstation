@@ -1,0 +1,48 @@
+
+.bg_black{
+    background-color: black;
+}
+
+
+
+
+
+
+/*********** N A V ************/
+.ms_top_logo{
+    min-height: 36px;
+}
+
+.header_sony{
+    max-width: 75px;
+}
+
+.navbar .dropdown {
+    position: static;
+}
+
+.navbar .dropdown-menu{
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    border: 0;
+}
+
+.ms_drop_item, .ms_drop_item_btm{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+/*********** H E A D E R ***********/
+
+
+
+body{
+    background-color: darkslategray;
+}
