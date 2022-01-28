@@ -1,4 +1,12 @@
 
+img{
+    max-width: 100%;
+}
+
+.bg_white{
+    background-color: white;
+}
+
 .bg_black{
     background-color: black;
 }
@@ -20,10 +28,10 @@
     display: block;
     position: absolute;
     border-radius: 999px;
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
     transition: all 250ms linear;
 }
 
@@ -162,10 +170,6 @@ header{
 
 
 /*********** M A I N ***********/
-body{
-    background-color: darkslategray;
-}
-
 /* J U M B O */
 #jumbo_game{
     background-image: url(../img/jumbo-bg.png);
@@ -183,6 +187,25 @@ body{
     width: 250px;
 }
 
+
+/* L I S T - G A M E S */
+.card_img{
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: all 250ms ease-in-out; 
+}
+
+.card_active{
+    border: 3px solid transparent;
+    outline: 3px solid #0070D1;
+    opacity: 1;
+}
+
+.card_img:hover{
+    transform: translateY(-10px);
+    opacity: 1;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
 
 
 
