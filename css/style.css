@@ -7,24 +7,57 @@
     background-color: #363636;
 }
 
-.blue_hover:hover{
-    color: #0070D1;
-}
-
 .ms_btn{
     border: 0;
-    padding: 2px 15px;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.body_btn:hover::after{
+    background: none;
+    border: 2px solid;
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 999px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    transition: all 250ms linear;
+}
+
+.body_btn_red{
+    background-color: #cd3d0f;
+}
+
+.body_btn_red.body_btn::after{
+    border-color: #cd3d0f;
+}
+
+.body_btn_white{
+    background-color: white;
+}
+
+.body_btn_white.body_btn::after{
+    border-color: white;
+}
+
+.body_btn_blue{
+    background-color: #0070D1;
+}
+
+.body_btn_blue.body_btn::after{
+    border-color: #0070D1;
 }
 
 
-
-/*********** N A V ************/
-
-.ms_top_logo{
-    min-height: 36px;
+/*********** H E A D E R ***********/
+header{
+    display: contents;
 }
 
-.header_sony{
+.sony_logo{
     max-width: 75px;
 }
 
@@ -39,6 +72,7 @@
 
 .navbar a:focus, .navbar a:hover{
     color: #0070d1 !important;
+    transition: all 250ms ease-in-out;    
 }
 
 .navbar .dropdown {
@@ -65,6 +99,7 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all 250ms ease-in-out;
 }
 
 .ms_drop_item img{
@@ -85,6 +120,7 @@
 .navbar .ms_drop_item_btm a:hover {
     background-color: transparent;
     color: #0070d1;
+    transition: all 250ms ease-in-out;
 }
 
 .dropdown-toggle::after{
@@ -96,11 +132,11 @@
     color: #999999;
     position: relative;
     top: 3px;
-
 }
 
 .dropdown-toggle:hover::after{
     color:#0070d1;
+    transition: all 250ms ease-in-out;
 }
 
 .navbar a.show::after {
@@ -110,6 +146,7 @@
 
 .ms_cta_login:hover{
     background-color: #666;
+    transition: all 250ms ease-in-out;
 }
 
 .ms_search_md{
@@ -117,15 +154,34 @@
     background-color: transparent;
 }
 
+.ms_search_md:hover{
+    color: #0070D1;
+}
 
 
 
-/*********** H E A D E R ***********/
 
+/*********** M A I N ***********/
 body{
     background-color: darkslategray;
 }
 
+/* J U M B O */
+#jumbo_game{
+    background-image: url(../img/jumbo-bg.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#jumbo_game .container-fluid{
+    height: 100%;
+}
+
+.game_logo{
+    width: 250px;
+}
 
 
 
