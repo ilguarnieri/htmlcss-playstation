@@ -30,6 +30,12 @@ a:hover{
     background-color: #363636;
 }
 
+.tm_icon{
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+}
+
 .ms_btn{
     border: 0;
     padding: 5px 20px;
@@ -279,11 +285,36 @@ header{
 }
 
 
+
 /* B A N N E R - G  A M E */
 .game_it_takes{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+
+
+/* N E W - G A M E S */
+.new_games_wrapper{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.new_games_wrapper .tm_icon{
+    font-size: 12px;
+}
+
+.new_games_title{
+    font-size: 18px;
+}
+
+.new_games_card img{
+    border-radius: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.new_games_card img:hover{
+    transform: scale(1.05);
+}
 
 
 
