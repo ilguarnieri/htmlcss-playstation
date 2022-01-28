@@ -7,13 +7,14 @@
     background-color: #363636;
 }
 
-.my_btn{
+.blue_hover:hover{
+    color: #0070D1;
+}
+
+.ms_btn{
     border: 0;
     padding: 2px 15px;
 }
-
-
-
 
 
 
@@ -105,13 +106,34 @@
 .navbar a.show::after {
     color: #0070D1;
     content: '\f077';
-} 
+}
+
+.ms_cta_login:hover{
+    background-color: #666;
+}
+
+.ms_search_md{
+    font-size: 18px;
+    background-color: transparent;
+}
+
+
 
 
 /*********** H E A D E R ***********/
 
-
-
 body{
     background-color: darkslategray;
+}
+
+
+
+
+
+
+/*********** M E D I A ***********/
+@media all and (min-width: 992px){
+    .ms_form_search{
+        display: none;
+    }
 }
