@@ -3,18 +3,41 @@
     background-color: black;
 }
 
+.bg_gray{
+    background-color: #363636;
+}
+
+.my_btn{
+    border: 0;
+    padding: 2px 15px;
+}
+
 
 
 
 
 
 /*********** N A V ************/
+
 .ms_top_logo{
     min-height: 36px;
 }
 
 .header_sony{
     max-width: 75px;
+}
+
+.nav-link{
+    padding: 0;
+}
+
+.navbar a{
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.navbar a:focus, .navbar a:hover{
+    color: #0070d1 !important;
 }
 
 .navbar .dropdown {
@@ -32,11 +55,57 @@
     display: inline-block;
 }
 
+.ms_item_card{
+    width: 150px;
+    height: 130px;
+}
 
+.ms_item_card:hover{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
 
+.ms_drop_item img{
+    width: 70px;
+}
 
+.ms_drop_item_btm::before{
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    top: 30%;
+    left: 0;
+    background-color: #0070d1;
+}
 
+.navbar .ms_drop_item_btm a:hover {
+    background-color: transparent;
+    color: #0070d1;
+}
 
+.dropdown-toggle::after{
+    border: 0;
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #999999;
+    position: relative;
+    top: 3px;
+
+}
+
+.dropdown-toggle:hover::after{
+    color:#0070d1;
+}
+
+.navbar a.show::after {
+    color: #0070D1;
+    content: '\f077';
+} 
 
 
 /*********** H E A D E R ***********/
