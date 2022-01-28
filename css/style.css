@@ -3,6 +3,12 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .bg_white{
     background-color: white;
 }
@@ -19,6 +25,7 @@ img{
     border: 0;
     padding: 5px 20px;
     position: relative;
+    white-space: nowrap;
 }
 
 .body_btn:hover::after{
@@ -125,6 +132,10 @@ header{
     background-color: #0070d1;
 }
 
+.ms_drop_item a:hover{
+    background-color: transparent;
+}
+
 .navbar .ms_drop_item_btm a:hover {
     background-color: transparent;
     color: #0070d1;
@@ -171,21 +182,32 @@ header{
 
 /*********** M A I N ***********/
 /* J U M B O */
-#jumbo_game{
-    background-image: url(../img/jumbo-bg.png);
-    height: 700px;
+.game_banner{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#jumbo_game .container-fluid{
-    height: 100%;
+.game_returnal{
+    background-image: url(../img/jumbo-bg.png);
+}
+
+.game_banner .container{
+    min-height: 700px;
 }
 
 .game_logo{
-    width: 250px;
+    width: 450px;
 }
+
+.game_title{
+    font-size: 2.6rem;
+}
+
+.game_subtitle{
+    font-size: 1.1rem;
+}
+
 
 
 /* L I S T - G A M E S */
@@ -209,10 +231,24 @@ header{
 
 
 
+/* P S 5 */
+
+
+
+/* B A N N E R - G  A M E */
+.game_it_takes{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+
+
 
 /*********** M E D I A ***********/
 @media all and (min-width: 992px){
     .ms_form_search{
         display: none;
+    }
+    .game_logo{
+        width: 250px;
     }
 }
