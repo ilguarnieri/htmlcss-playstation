@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 
 img{
     max-width: 100%;
@@ -378,12 +381,6 @@ header{
 
 
 
-/* P L A Y S T A T I O N - N O W */
-.now_container{
-    background-color: #161c3b;
-}
-
-
 /* P L A Y S T A T I O N - S T O R E */
 .store_title{
     font-size: min(7vw, 35px);
@@ -392,10 +389,19 @@ header{
 .store_wrapper img{
     border-radius: 20px;
     transition: all 250ms ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .store_wrapper img:hover{
     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* P L A Y S T A T I O N - N O W */
+.now_container{
+    background-color: #161c3b;
 }
 
 
@@ -404,11 +410,17 @@ header{
 .social_card img{
     border-radius: 20px;
     transition: all 250ms ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .social_card img:hover{
     transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
+
+
+
+/*********** F O O T E R ***********/
 
 
 
