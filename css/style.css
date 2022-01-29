@@ -264,23 +264,6 @@ header{
 
 
 /* P S 5 */
-.ps_words{
-    color: #0070D1;
-    position: relative;
-    top: 20px;
-    font-size: min(3vw, 14px);
-    white-space: nowrap;
-}
-
-.section_title{
-    font-size: min(8vw, 40px);
-    white-space: nowrap;
-}
-
-.section_subtitle{
-    color:  #727272;
-    font-size: min(5vw, 20px);
-}
 
 .accessories_title{
     display: none;
@@ -324,14 +307,6 @@ header{
     color: white;
 }
 
-.new_games_wrapper .copyright_icon{
-    font-size: min(3vw, 12px);
-}
-
-.new_games_title{
-    font-size: min(3.5vw, 16px);
-}
-
 .new_games_card img{
     border-radius: 20px;
     transition: all 250ms ease-in-out;
@@ -353,13 +328,6 @@ header{
     cursor: pointer;
 }
 
-.section_title_accessories{
-    font-size: min(7vw, 35px);
-}
-
-.section_subtitle_accessories{
-    font-size: min(4vw, 16px);
-}
 
 
 /* P L A Y S T A T I O N - P L U S */
@@ -375,17 +343,9 @@ header{
     display: none;
 }
 
-.offer_subtitle{
-    font-size: min(4vw, 18px);
-}
-
 
 
 /* P L A Y S T A T I O N - S T O R E */
-.store_title{
-    font-size: min(7vw, 35px);
-}
-
 .store_wrapper img{
     border-radius: 20px;
     transition: all 250ms ease-in-out;
