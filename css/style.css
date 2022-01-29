@@ -342,6 +342,10 @@ header{
     font-size: min(7vw, 35px);
 }
 
+.section_subtitle_accessories{
+    font-size: min(4vw, 16px);
+}
+
 
 /* P L A Y S T A T I O N - P L U S */
 .plus_container{
@@ -354,6 +358,10 @@ header{
 
 .offer_games img{
     display: none;
+}
+
+.offer_subtitle{
+    font-size: min(4vw, 18px);
 }
 
 
@@ -369,16 +377,26 @@ header{
     font-size: min(7vw, 35px);
 }
 
+.store_wrapper img{
+    border-radius: 20px;
+    transition: all 250ms ease-in-out;
+}
+
+.store_wrapper img:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* S O C I A L */
 .social_card img{
+    border-radius: 20px;
     transition: all 250ms ease-in-out;
 }
 
 .social_card img:hover{
     transform: scale(1.05);
 }
-
-
-/* S O C I A L */
 
 
 
@@ -390,10 +408,6 @@ header{
     .game_logo{
         width: 250px;
     }
-    .accessories_title{
-        display: block;
-    }
-
 }
 
 @media all and (min-width: 768px){
@@ -402,5 +416,8 @@ header{
     }
     .social_link .social_card{
         width: 150px;
+    }
+    .accessories_title{
+        display: block;
     }
 }
