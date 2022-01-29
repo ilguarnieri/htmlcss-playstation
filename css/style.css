@@ -90,6 +90,7 @@ header{
 
 .sony_logo{
     max-width: 75px;
+    cursor: pointer;
 }
 
 .nav-link{
@@ -251,19 +252,19 @@ header{
 .ps_words{
     color: #0070D1;
     position: relative;
-    top: 10%;
-    font-size: max(14px, 1.1vw);
+    top: 20px;
+    font-size: min(3vw, 14px);
     white-space: nowrap;
 }
 
 .section_title{
-    font-size: max(30px, 2.5vw);
+    font-size: min(8vw, 40px);
     white-space: nowrap;
 }
 
 .section_subtitle{
     color:  #727272;
-    font-size: max(18px, 1.2vw);
+    font-size: min(5vw, 20px);
 }
 
 .accessories_title{
@@ -333,14 +334,13 @@ header{
     top: -15px;
 }
 
-.special_section .section_subtitle{
-    font-size: max(18px, 1vw);
-}
-
 .special_section img:hover{
     cursor: pointer;
 }
 
+.section_title_accessories{
+    font-size: min(7vw, 35px);
+}
 
 
 /* P L A Y S T A T I O N - P L U S */
@@ -364,12 +364,21 @@ header{
 }
 
 
-
 /* P L A Y S T A T I O N - S T O R E */
-.section_title{
-    white-space: wrap;
+.store_title{
+    font-size: min(7vw, 35px);
 }
 
+.social_card img{
+    transition: all 250ms ease-in-out;
+}
+
+.social_card img:hover{
+    transform: scale(1.05);
+}
+
+
+/* S O C I A L */
 
 
 
@@ -390,5 +399,8 @@ header{
 @media all and (min-width: 768px){
     .offer_games img{
         display: block;
+    }
+    .social_link .social_card{
+        width: 150px;
     }
 }
