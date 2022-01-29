@@ -82,6 +82,18 @@ a:hover{
     outline-color: #d9dadc;
 }
 
+/* SCROLL-BAR STYLE */
+::-webkit-scrollbar {
+    width: 12px;
+}
+/* MANIGLIA DI SCORRIMENTO */
+::-webkit-scrollbar-thumb {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    background: #0070D1;
+}
+
+
 
 /*********** H E A D E R ***********/
 header{
@@ -310,11 +322,11 @@ header{
 }
 
 .new_games_wrapper .copyright_icon{
-    font-size: 12px;
+    font-size: min(3vw, 12px);
 }
 
 .new_games_title{
-    font-size: 18px;
+    font-size: min(3.5vw, 16px);
 }
 
 .new_games_card img{
