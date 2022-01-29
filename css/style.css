@@ -264,14 +264,12 @@ header{
 
 
 /* P S 5 */
-
 .accessories_title{
-    display: none;
     font-size: 18px;
 }
 
 .accessories_card img{
-    max-width: 120px;
+    max-width: 60%;
 }
 
 .accessories_card{
@@ -281,10 +279,6 @@ header{
 
 .accessories_card:hover{
     opacity: 1;
-}
-
-.accessories_list li{
-    max-height: 240px;
 }
 
 .accessories_active{
@@ -339,10 +333,6 @@ header{
     width: 380px;
 }
 
-.offer_games img{
-    display: none;
-}
-
 
 
 /* P L A Y S T A T I O N - S T O R E */
@@ -369,15 +359,25 @@ header{
 /* S O C I A L */
 .social_card img{
     border-radius: 20px;
-    transition: all 250ms ease-in-out;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .social_card img:hover{
-    transform: scale(1.05);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    animation: social_move 1s ease-in-out infinite;
 }
 
+@keyframes social_move {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 
 
 /*********** F O O T E R ***********/
@@ -396,6 +396,10 @@ header{
 
 .footer_link ul li{
     padding: 3px 0;
+}
+
+.footer_link ul li:hover{
+    text-decoration: underline;
 }
 
 .footer_language img{
@@ -423,22 +427,13 @@ header{
 
 /*********** M E D I A ***********/
 @media all and (min-width: 992px){
-    .ms_form_search{
-        display: none;
-    }
     .game_logo{
         width: 250px;
     }
 }
 
 @media all and (min-width: 768px){
-    .offer_games img{
-        display: block;
-    }
     .social_link .social_card{
         width: 150px;
-    }
-    .accessories_title{
-        display: block;
     }
 }
