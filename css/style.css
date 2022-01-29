@@ -73,6 +73,15 @@ a:hover{
     outline-color: #0070D1;
 }
 
+.body_btn_gray{
+    background-color: #d9dadc;
+    color: #0070D1;
+}
+
+.body_btn_gray.body_btn:hover{
+    outline-color: #d9dadc;
+}
+
 
 /*********** H E A D E R ***********/
 header{
@@ -248,7 +257,7 @@ header{
 }
 
 .section_title{
-    font-size: max(30px, 2.8vw);
+    font-size: max(30px, 2.5vw);
     white-space: nowrap;
 }
 
@@ -319,26 +328,47 @@ header{
 
 
 /* PS4 */
-.ps4_console .tm_icon{
+.special_section .tm_icon{
     font-size: max(15px, 1vw);
     top: -15px;
 }
 
-.ps4_console .section_title{
-    font-size: max(30px, 2.5vw);
-}
-
-.ps4_console .section_subtitle{
+.special_section .section_subtitle{
     font-size: max(18px, 1vw);
 }
 
-.ps4_console img:hover{
+.special_section img:hover{
     cursor: pointer;
 }
 
 
-/* P L A Y S T A T I O N P L U S */
 
+/* P L A Y S T A T I O N - P L U S */
+.plus_container{
+    background-color: #bebcbb;
+}
+
+.offer_logo{
+    width: 380px;
+}
+
+.offer_games img{
+    display: none;
+}
+
+
+
+/* P L A Y S T A T I O N - N O W */
+.now_container{
+    background-color: #161c3b;
+}
+
+
+
+/* D I S C O U N T */
+.section_title{
+    white-space: wrap;
+}
 
 
 
@@ -351,6 +381,13 @@ header{
         width: 250px;
     }
     .accessories_title{
+        display: block;
+    }
+
+}
+
+@media all and (min-width: 768px){
+    .offer_games img{
         display: block;
     }
 }
