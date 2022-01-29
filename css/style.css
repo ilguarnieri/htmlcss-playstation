@@ -30,7 +30,7 @@ a:hover{
     background-color: #363636;
 }
 
-.tm_icon{
+.copyright_icon{
     font-size: 10px;
     position: relative;
     top: -5px;
@@ -308,7 +308,7 @@ header{
     color: white;
 }
 
-.new_games_wrapper .tm_icon{
+.new_games_wrapper .copyright_icon{
     font-size: 12px;
 }
 
@@ -328,7 +328,7 @@ header{
 
 
 /* PS4 */
-.special_section .tm_icon{
+.special_section .copyright_icon{
     font-size: max(15px, 1vw);
     top: -15px;
 }
@@ -365,10 +365,11 @@ header{
 
 
 
-/* D I S C O U N T */
+/* P L A Y S T A T I O N - S T O R E */
 .section_title{
     white-space: wrap;
 }
+
 
 
 
