@@ -17,6 +17,10 @@ a{
     color: currentColor;
 }
 
+.copyright_icon{
+    font-size: 12px;
+}
+
 a:hover{
     color: currentColor;
 }
@@ -31,12 +35,6 @@ a:hover{
 
 .bg_gray{
     background-color: #363636;
-}
-
-.copyright_icon{
-    font-size: 10px;
-    position: relative;
-    top: -5px;
 }
 
 .ms_btn{
@@ -299,6 +297,11 @@ header{
 .new_games_wrapper{
     background-color: #1f1f1f;
     color: white;
+    min-height: 700px;
+}
+
+.new_games_card{
+    z-index: 2;
 }
 
 .new_games_card img{
@@ -307,19 +310,56 @@ header{
 }
 
 .new_games_card img:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+.ms_carousel{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 1;
+    display: absolute;
+    transition: all 250ms ease-in;
+}
+
+.ms_carousel:hover{
+    opacity: 1;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.carousel-caption{
+    color: white;
+    text-align: start;
+    top: -140px;
+    left: 0;
+    max-width: 70%;
+}
+
+.carousel-control-prev{
+    left: calc(100% - 50px - 10px - 50px);
+    top: 50px;
+}
+
+.carousel-control-next{
+    left: calc(100% - 50px);
+    top: 50px;
+}
+
+.carousel-inner{
+    padding-top: 150px;
 }
 
 
 
 /* PS4 */
-.special_section .copyright_icon{
-    font-size: max(15px, 1vw);
-    top: -15px;
-}
-
 .special_section img:hover{
     cursor: pointer;
+}
+
+.registered{
+    font-size: 20px;
 }
 
 
